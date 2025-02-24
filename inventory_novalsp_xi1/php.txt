@@ -1,0 +1,65 @@
+create database db_inventory_novalsp
+
+create table barang (
+id_barang int primary key, 
+id_jenis int(100),
+stok int,
+harga varchar(60),
+nama_barang varchar(50));
+
+create TABLE jenis (
+id_jenis int primary key, 
+nama_jenis varchar(80));
+
+alter TABLE barang add foreign key (id_jenis) REFERENCES jenis (id_jenis)
+on delete CASCADE
+on UPDATE CASCADE
+
+INSERT INTO barang (id_barang, id_jenis, stok, harga, nama_barang)
+values('211', '01', '23', '11000', 'Pensil'),
+('212', '02', '24', '14000', 'Buku'),
+('213', '03', '25', '1000', 'Penghapus');
+
+INSERT INTO jenis (id_jenis, nama_jenis)
+values ('01', 'ATK'),
+('02', 'ATK'),
+('03', 'Makanan');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+administrator
+admin@admin.com
+pw : admin
+
+
+
+
+
+
+
+
+
