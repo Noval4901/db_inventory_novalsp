@@ -1,0 +1,3 @@
+edit icon <i class="fa-solid fa-pen-to-square"></i>
+plus icon <i class="fa-solid fa-plus"></i>
+delete icon <i class="fa-solid fa-trash"></i>
